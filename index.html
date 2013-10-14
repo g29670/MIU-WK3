@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- Elijah Moran -->
+<!-- MIU 1310 -->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="description" content="placeholder text" />
+    <meta name="keywords" content="movies, DVD, VHS, Blu-ray" />
+    <meta name="robots" content= "index,follow" />
+    <meta content="user-scalable=no, width=device-width" name="viewport" />
+    <meta content="user-scalable=no, target-densitydpi=device-dpi" />
+
+	<title>My Movie Library</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"/>
+	<link rel="stylesheet" href="css/styles.css"/>
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Start of Home Page -->
+	<div data-role="page" id="index">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>My Movie Library</h1>
+		</div>
+
+		<!-- Home Content -->
+		<div data-role="content">
+            <img class="imgSize" src="images/MainLogo.png"/>
+			<!-- Call to Action -->
+			<a href="#additem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Add A Movie</a>
+			</div>
+
+			<!-- Browse -->
+			<div class="ui-grid-b">
+
+				<div class="ui-block-a" >
+					<a href="#underConstruction">
+						<img src="images/dvdbutton.png"/>
+					</a>
+					<p> Browse DVD</p>
+				</div>
+				<div class="ui-block-b" >
+					<a href="#news">
+						<img src="images/vhsbutton.png"/>
+					</a>
+					<p> Browse VHS</p>
+				</div>
+				<div class="ui-block-c" >
+					<a href="#underConstruction">
+						<img src="images/blu-raybutton.png"/>
+					</a>
+					<p>Browse Blu-ray</p>
+				</div>
+			</div>
+
+
+			<!-- News Stream -->
+			<div>
+				<a href="#news"data-role="button" class="secondaryColor" >News Stream</a>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+		    <small>Movies help you experience the WORLD!!!</small><br> 
+
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="secondaryColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Start of About Page -->
+	<div data-role="page" id="about" data-add-back-btn="true">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>About</h1>
+		</div>
+
+		<!--  About Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/Logo.png" class="imgSize" id="Logo.png" />
+			</div>
+
+			<div>
+				<ul data-role="listview">
+
+					<li>
+						<a href="#aboutApp">
+							<img src="images/Logo.png"/>
+							<h4>About the App</h4>
+							<p>This will tell you about the app</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="#underconstruction">
+							<img src="images/Logo.png"/>
+							<h4>About the me</h4>
+							<p>This will tell you about the developer</p>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+		    <small>Movies help you experience the WORLD!!!</small><br>
+
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start of About App Page -->
+	<div data-role="page" id="aboutApp" data-add-back-btn="true">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>About the App</h1>
+		</div>
+
+		<!--  About Content -->
+		<div data-role="content">
+
+			<div>
+				<img src="images/Logo.png" class="imgSize" />
+			</div>
+
+			<div>
+				<h4>About this app</h4>
+				<p class="indent">This application, will allow you to store your current collection of movies in a central data location. You will be able to document your DVD, Blu-ray, and for the diehard movie fans, VHS videos.</p>
+				<p class="indent">You will find that this app will help you or your guest choose a movie quickly for whatever mood you are in.</p>
+			</div>	
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+		    <small>Movies help you experience the WORLD!!!</small><br>
+
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="secondaryColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Start of otherApp Page -->
+	<div data-role="page" id="otherApp" data-add-back-btn="true">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>About the Other App</h1>
+		</div>
+
+		<!--  Other App Content -->
+		<div data-role="content">
+
+			<ul data-role="listview">
+				<li>
+					<img src="images/Logo.png"/>
+					<h4>Bronze App</h4>
+					<p>This is the Bronze App.</br>Click buton to see Gold App</br></p>
+				</li>
+			</ul>
+
+			<a href="http://g29670.github.com/MiU-Project-3/index.html" data-role="button">Review Gold Version</a>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+		    <small>Movies help you experience the WORLD!!!</small><br>
+
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="secondaryColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Start of News Page -->
+	<div data-role="page" id="news" data-add-back-btn="true">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>Newsstream</h1>
+		</div>
+
+		<!--  News Page Content -->
+		<div data-role="content">
+
+			<ul data-role="listview" data-filter="true">
+
+				<li>
+					<a href="news">
+						<img src="images/Logo.png"/>
+						<h4>Gravity’s Friday Box Office Should Propel It To Another Record Weekend </h4>
+						<span><small>by Mack Rawden</small></span>
+						<p>2013-10-12<br/>Tags: Movies,blockbusters</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="news">
+						<img src="images/Logo.png"/>
+						<h4>Operation Kino 134 Review: The Unbearable Tension Of Captain Phillips </h4>
+						<span><small>by Operation Kino</span></small>
+						<p>2013-10-12<br/>Tags: Adventure</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#news">
+						<img src="images/Logo.png"/>
+						<h4>'The Walking Dead' Premiere: Here's Everything You Missed</h4>
+						<span><small>by Alex Zalben</small></span>
+						<p>2013-10-13 <br/>Tags: Action</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#news">
+						<img src="images/Logo.png"/>
+						<h4>'Angry Birds': What To Expect When It Crashes Into Theaters.</h4>
+						<span><small>by Alex Zalben</small></span>
+						<p>2013-10-13 <br/>Tags: Animation</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#news">
+						<img src="images/Logo.png"/>
+						<h4>'Harry Potter' Reunion: Daniel Radcliffe And Alan Rickman Reveal What It'd Take</h4>
+						<span><small>by Kevin P. Sullivan</small></span>
+						<p>2013-10-13 <br/>Tags: Adventure, Action</p>
+					</a>
+				</li>		
+			</ul>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+		    <small>Movies help you experience the WORLD!!!</small><br>
+
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Start of Construction Page -->
+	<div data-role="page" id="underConstruction" data-add-back-btn="true">
+
+		<!-- Header -->
+		<div data-role="header" data-position="fixed" class="mainColor">
+			<h1>Under Construction</h1>
+		</div>
+
+		<!--  Construction Content -->
+		<div data-role="content">
+
+			<img src="images/Construction.png" class="imgSize"/>
+
+		</div>
+
+		<!-- Footer -->
+		<div data-role="footer" data-position="fixed">
+		    <small>Movies help you experience the WORLD!!!</small><br>
+
+			<!-- Navbar -->
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" data-iconpos="left" class="mainColor">Home</a></li>
+					<li><a href="#about" data-icon="info" data-iconpos="left" class="mainColor">About</a></li>
+					<li><a href="#otherApp"data-icon="check" data-iconpos="left" class="mainColor">Other App</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
